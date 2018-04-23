@@ -1,0 +1,149 @@
+
+@font-face {
+  font-family: PressStart2P-Regular;
+  src: url(../fonts/PressStart2P-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PressStart2P-Regular";
+}
+
+.userMsg{
+  font-size: 10px;
+  margin-top: 10px;
+  height: 50px;
+}
+
+.note {
+  margin: 10px; 
+  filter: brightness(100%);
+  border: 5px solid black;
+  margin: 0;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  transition: background-color 0.2s ease-in-out;
+  transition: all 1s;
+}
+
+.main {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 50%;
+    border: 20px solid black;
+}
+
+.note0 {
+  top: 0;
+  left: 0;
+  background-color: #980015;
+  border-radius: 100% 00% 0;
+}
+.note1 {
+  top: 0;
+  right: 0;
+  background-color: #1919cc;
+  border-radius: 0 100% 0 0;
+}
+.note2 {
+  bottom: 0;
+  left: 0;
+  background-color: orange;
+  border-radius: 0 0 0 100%;
+}
+.note3 {
+  bottom: 0;
+  right: 0;
+  background-color: green;
+  border-radius: 0 0 100% 0;
+}
+
+.middle-control {
+  width: 50%;
+  height: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 25%;
+  left: 25%; 
+  border-radius: 50%;
+  background-color: rgb(70, 69, 69);
+  border: 10px solid black
+  
+}
+
+.middle-control span {
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  filter: brightness(200%);
+}
+
+.start-game{
+  border-radius: 100%;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: green;
+}
+
+.start-game:focus{
+  outline: none;
+}
+
+.middle-control .score {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: black;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-control .panel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media (min-width: 600px){
+  .main{
+    width: 500px;
+    height: 500px;
+  }
+
+  .middle-control .score {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .start-game{
+    width: 3em;
+    height: 3em;
+  }
+
+  .middle-control span {
+    font-size: 2em;
+  }
+
+  .userMsg{
+    font-size: 16px;
+  }
+  
+}
